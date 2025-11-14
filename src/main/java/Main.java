@@ -5,13 +5,13 @@ public class Main {
          
         while(true) {
          System.out.print("$ ");
-         Scanner scanner = new Scanner(System.in);
-         String input = scanner.next();
+         Scanner sc = new Scanner(System.in);
+         String input = sc.nextLine();
          
-         if(input.equalsIgnoreCase("exit 0"))
+         if(input.equalsIgnoreCase("0"))
                 break;
          System.out.println(input + ": command not found");
-         scanner.close();
+         sc.close();
         }
     }
 }
