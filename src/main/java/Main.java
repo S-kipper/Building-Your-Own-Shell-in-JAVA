@@ -3,7 +3,10 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        
 
+
+        //Remember to put this into case and functions in the future to make it look tidy
         while (true) {   //REPL 
             System.out.print("$ ");   //for printing the first prompt 
 
@@ -23,7 +26,7 @@ public class Main {
             }
             
             if(input.startsWith("type"))    {
-                System.out.println(input + "is a shell builtin");
+                System.out.println(input +" " +"is a shell builtin");
             }
 
             else
