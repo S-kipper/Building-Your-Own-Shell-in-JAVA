@@ -21,11 +21,11 @@ public class Main {
             }
 
             //For checking if the first word is echo or not
-            if(input.startsWith("echo "))   {
+            else if(input.startsWith("echo "))   {
                 System.out.println(input.substring(5)); //This will make sure the echo doesnot print with the word
             }
             
-            if(input.startsWith("type"))    {
+            else if(input.startsWith("type"))    {
                 System.out.println(input.substring(5) +" " +"is a shell builtin");
             }
 
