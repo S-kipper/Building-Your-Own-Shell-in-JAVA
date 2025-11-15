@@ -22,6 +22,9 @@ public class Main {
                 System.out.println(input.substring(5)); //This will make sure the echo doesnot print with the word
             }
             
+            if(input.startsWith("type"))    {
+                 System.out.println(input + "is a shell builtin");
+            }
 
             else
                 System.out.println(input + ": command not found");
@@ -30,3 +33,5 @@ public class Main {
         sc.close();
     }
 }
+
+
