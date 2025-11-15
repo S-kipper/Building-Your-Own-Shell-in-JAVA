@@ -26,7 +26,7 @@ public class Main {
             }
             
             if(input.startsWith("type"))    {
-                System.out.println(input +" " +"is a shell builtin");
+                System.out.println(input.substring(5) +" " +"is a shell builtin");
             }
 
             else
