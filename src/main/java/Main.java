@@ -4,11 +4,11 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        while (true) {
-            System.out.print("$ ");
+        while (true) {   //REPL 
+            System.out.print("$ ");   //for printing the first prompt 
 
-            if (!sc.hasNextLine()) {
-                break;  // no more input from tester → stop
+            if (!sc.hasNextLine()) {  //it check if there is a next input if not then it breaks the loop and exits
+                break;  
             }
 
             String input = sc.nextLine();
@@ -17,7 +17,14 @@ public class Main {
                 break;
             }
 
-            System.out.println(input + ": command not found");
+            //For checking if the first word is echo or not
+            if(input.startsWith("echo "))   {
+                System.out.println(input.substring(5)); //This will make sure the echo doesnot print with the word
+            }
+            
+
+        
+            //System.out.println(input + ": command not found");
         }
 
         sc.close();
